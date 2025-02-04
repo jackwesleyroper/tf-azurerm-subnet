@@ -32,7 +32,7 @@ variable "private_endpoint_network_policies_enabled" {
 variable "private_link_service_network_policies_enabled" {
   type        = bool
   description = "Enable or Disable network policies for the private link service on the subnet. Must be set to False if using Private Link Service on a given subnet."
-  default     = false 
+  default     = false
 }
 
 variable "delegation" {
