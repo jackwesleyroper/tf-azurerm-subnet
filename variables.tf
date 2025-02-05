@@ -24,9 +24,9 @@ variable "service_endpoints" {
 }
 
 variable "private_endpoint_network_policies_enabled" {
-  type        = bool
-  description = "Enable or Disable network policies for the Private Link Endpoint on the Subnet. Must be set to False if using Private Link Endpoint on a given subnet."
-  default     = false
+  type        = String
+  description = " (Optional) Enable or Disable network policies for the private endpoint on the subnet. Possible values are Disabled, Enabled, NetworkSecurityGroupEnabled and RouteTableEnabled. Defaults to Disabled."
+  default     = "Disabled"
 }
 
 variable "private_link_service_network_policies_enabled" {
